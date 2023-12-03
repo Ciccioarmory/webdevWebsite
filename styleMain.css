@@ -1,0 +1,97 @@
+* {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* body {
+	background: linear-gradient(45deg, blue, green);
+}
+ */
+
+body {
+	background: rgb(255, 172, 172);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 172, 172, 1) 4%,
+		rgba(132, 167, 255, 1) 52%,
+		rgba(255, 130, 244, 1) 100%,
+		rgba(110, 110, 110, 1) 100%
+	);
+	/* background-color: rgb(104, 88, 0); */
+	font-size: 20px;
+	padding: 50px;
+}
+
+#pageName {
+	background-color: rgb(0, 0, 0);
+	border-radius: 10%;
+	border: 2px solid #9e9e9e;
+	color: white;
+	width: 18%;
+}
+
+#projects {
+	position: relative;
+	border: 5px solid #000000;
+	border-radius: 15px;
+	width: auto;
+	padding: 25px;
+	margin: 30px auto; /* This will center the div horizontally */
+	display: flex;
+	justify-content: space-evenly;
+	overflow: hidden;
+}
+
+#projects:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 172, 172, 1) 4%,
+		rgba(132, 167, 255, 1) 52%,
+		rgba(255, 130, 244, 1) 100%,
+		rgba(110, 110, 110, 1) 100%
+	);
+	z-index: -1;
+	filter: blur(30px);
+}
+
+#content {
+	position: relative;
+}
+
+#githubImage {
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+}
+
+#viperRoleplayImg {
+	position: fixed;
+	left: 100px;
+	bottom: 10px;
+	width: 6%;
+}
+
+#pageName {
+	position: fixed;
+	font-size: 35px;
+	left: 10px;
+	top: 0%;
+	/* bottom: 10px; */
+}
+
+#projects h3 {
+	flex: 1;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10%;
+	border: 3px solid #000000;
+	color: white;
+}
+
+#title {
+	text-align: center;
+}
